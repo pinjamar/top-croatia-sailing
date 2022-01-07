@@ -32,3 +32,12 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+//skippers
+const toggles = document.querySelectorAll(".faq-toggle");
+
+toggles.forEach((toggle) => {
+  toggle.addEventListener("click", () => {
+    toggle.parentNode.classList.toggle("active");
+  });
+});
