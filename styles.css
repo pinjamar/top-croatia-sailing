@@ -49,12 +49,7 @@ body {
 }
 
 .nav.active {
-  background-color: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-}
-
-.nav.active a {
-  color: #000;
 }
 
 .nav.active .container {
@@ -119,21 +114,31 @@ body {
   color: #555;
   line-height: 30px;
   letter-spacing: 1.2px;
-  margin-top: 50px;
 }
 
 .skippers {
   display: flex;
   justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 20px 0;
 }
 
 .skipper-card {
-  border: 1px grey solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 50%;
 }
 
 .skipper-image {
   border-radius: 50%;
+}
+
+.skip-text {
+  margin: 5px;
+  padding: 10px;
+  text-align: center;
 }
 
 /* Style the button that is used to open and close the collapsible content */
@@ -150,10 +155,6 @@ body {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.collapsible:hover {
-  background-color: #ccc;
-}
 
 /* Style the collapsible content. Note: hidden by default */
 .coll-content {
@@ -251,35 +252,18 @@ body {
 }
 
 /* 3RD PAGE */
-
-.gallery {
-  border: 1px solid #ccc;
+.image-gallery {
+  margin: 30px 20px;
 }
-
-.gallery:hover {
-  border: 1px solid #777;
-}
-
 .gallery img {
   width: 100%;
   height: auto;
 }
 
-.desc {
-  padding: 15px;
-  text-align: center;
-}
-
 .responsive {
-  padding: 0 6px;
   float: left;
   width: 24%;
-}
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
+  margin: 0 5px;
 }
 
 /* 4TH PAGE */
@@ -290,21 +274,28 @@ body {
 
 .review-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 20px;
   flex-wrap: wrap;
 }
 
 .comment {
-  background-color: transparent;
   border: 1px solid #9fa4a8;
   border-radius: 10px;
   margin: 20px 0 20px;
-  padding: 30px;
+  padding: 20px;
   position: relative;
   overflow: hidden;
-  min-width: 20vw;
+  width: 20vw;
+  height: 17.5vh;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.comment:hover {
+  overflow: visible;
+  width: 50vw;
+  transition: 1s;
 }
 
 .comment::before,
@@ -325,6 +316,10 @@ body {
   top: -10px;
   left: -30px;
   transform: rotateY(180deg);
+}
+
+.comment p {
+  font-style: italic;
 }
 
 footer {
@@ -348,8 +343,7 @@ footer {
 
   ul {
     display: none;
-    background-color: #2b2c38;
-    margin: 0ppx;
+    margin: 0px;
   }
 
   ul.show {
@@ -359,23 +353,40 @@ footer {
   nav {
     display: flex;
     flex-direction: column-reverse;
-    background-color: #2b2c38;
+    z-index: 2;
   }
 
   .logo {
     display: none;
   }
+
+  .comment:hover {
+    height: 25vh;
+  }
 }
 
 @media only screen and (max-width: 700px) {
+  .about p {
+    color: #555;
+    line-height: normal;
+    letter-spacing: normal;
+    font-size: 14px;
+  }
   .responsive {
     width: 49.99999%;
     margin: 6px 0;
+  }
+  .skipper-card {
+    min-width: 95%;
   }
 
   .comment {
     padding: 10px;
     min-width: 45%;
+    z-index: -0.1;
+  }
+  .comment:hover {
+    width: 90vw;
   }
 }
 
