@@ -9,37 +9,33 @@
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
+
     <title>Top Croatia Sailing</title>
 </head>
 
 <body>
-
     <nav class="nav">
-        <div class="container">
+        <div class="nav-container">
             <h1 class="logo">
                 <a href="/index.html">Logo</a>
             </h1>
             <ul id="nav-list">
                 <li><a href="#home" class="current">Home</a></li>
-                <li><a href="#about">About us</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#image-gallery">Gallery</a></li>
                 <li><a href="#review">Reviews</a></li>
                 <li><a href="#contact-us">Contact</a></li>
             </ul>
-            <!-- <button class="hamburger" id="hamburger">
-                <i class="fas fa-bars"></i>
-            </button> -->
         </div>
     </nav>
-
     <div class="hero" id="home">
-        <div class="container">
+        <div class="title-container">
             <h1>Welcome to Top Croatia Sailing</h1>
             <p>Dream holiday is just an anchor away</p>
         </div>
     </div>
 
-    <section class="about" id="about">
+    <section class="about anchored-section" id="about">
         <div class="special">
             <h2>About us</h2>
             <p> We specialize in offering yacht charter services with an experienced crew. You will be accommodated with the best boat selection for your charter preference with our fleet of more than 300 boats. Our base is in Croatia and we offer an all-inclusive sailing experience around beautiful islands Brac, Hvar, Vis, etc. The focus is very much on the details, from the offer to make your trip more enjoyable to the authentic feel of the boats themselves. We are available for any questions and/or sudden change of heart with whatever issue you may have – we will gladly facilitate it all. Our staff is trained to offer any type of assistance and is very much committed to our clients, partners, and boat owners. Choose among our many extras such as sup, sup with led lights for nighttime, go pro videos as a lifetime memory, icebox, grill, etc., and let us know your preferences via email or phone. If you wish your trip to be completely stress-free you can also entrust us with the transfer - all you have to do is provide the crucial details such as your flight number, etc. and enjoy the smooth ride while we take care of everything else.</p>
@@ -65,112 +61,144 @@
         </div>
     </section>
 
-    <section class="image-gallery" id="image-gallery">
-        <div class="carousel">
-            <div class="image-container" id="imgs">
-                <img src="images/people1.jpg" alt="">
-                <img src="images/people2.jpg" alt="">
-                <img src="images/people3.jpg" alt="">
-                <img src="images/family1.jpg" alt="">
-            </div>
-      
-            <div class="buttons-container">
-              <button id="left" class="btn">Prev</button>
-              <button id="right" class="btn">Next</button>
-            </div>
-          </div>
+    <section class="image-gallery anchored-section" id="image-gallery">
+      <div class="cat-carousel-wrapper">
+        <div id="kitten-carousel"></div>
+        <div class="cat-carousel--button button--next"></div>
+        <div class="cat-carousel--button button--prev"></div>
+      </div>
     </section>
 
-    <section class="reviews" id="review">
+    <section class="reviews anchored-section" id="review">
         <div>
             <h2 class="comments-title">Reviews</h2>
             <div class="review-list">
-                <div class="comment">
-                    <h3 class="review-title">
-                        Surene
+                <div class="faq">
+                    <h3 class="faq-title">
+                      Surene
                     </h3>
-                    <p class="review-text">
-                        "We were a group of 10, and Romano, oh Romano, he was our age, albeit having been a captain for many years, so he knew how to make our trip epic!! He was a skipper-cum-travel manager who suggested an itinerary for our whole trip and made all the activity & meal arrangements and sailed us to destination..."
-                    </p>
-                </div>
-                <div class="comment">
-                    <h3 class="review-title">
-                        Michael L.
+                    <p class="faq-text">
+                        "We were a group of 10, and Romano, oh Romano, he was our age, albeit having been a captain for many years, so he knew how to make our trip epic!! He was a skipper-cum-travel manager who suggested an itinerary for our whole trip and made all the activity & meal arrangements and sailed us to destination..."</p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>  
+                <div class="faq">
+                    <h3 class="faq-title">
+                      Michael L.
                     </h3>
-                    <p class="review-text">
-                        "Wonderful stay with our family, 5 people, for week long trip on Baby Blue 2 Excellent skipper (Romano) and hostess (Diana). Professional yet personal and authentic experience (flexible, great choice of restaurant suggestions off the beaten track, etc). Highly recommended!"
-                    </p>
-                </div>
-                <div class="comment">
-                    <h3 class="review-title">
-                     Annamarcotte1
+                    <p class="faq-text">
+                        "Wonderful stay with our family, 5 people, for week long trip on Baby Blue 2 Excellent skipper (Romano) and hostess (Diana). Professional yet personal and authentic experience (flexible, great choice of restaurant suggestions off the beaten track, etc). Highly recommended!"</p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>      
+                <div class="faq">
+                    <h3 class="faq-title">
+                      Annamarcotte1
                     </h3>
-                    <p class="review-text">
-                        "The weather was perfect, even it’s storms are beautiful. And of course, we ate the freshest fish, had a fantastic Octopus Peka and you just have to try the lavender ice cream! With over 1300 islands in Croatia & having visited 3….I think I may have to come back! thank you (hvala) @sailcharterincroatia & Romano Mihanović for a fantastic dream vacation experience!"
-                    </p>
-                </div>
-                <div class="comment">
-                    <h3 class="review-title">
-                  Dan G.
+                    <p class="faq-text">
+                        "The weather was perfect, even it’s storms are beautiful. And of course, we ate the freshest fish, had a fantastic Octopus Peka and you just have to try the lavender ice cream! With over 1300 islands in Croatia & having visited 3….I think I may have to come back! thank you (hvala) @sailcharterincroatia & Romano Mihanović for a fantastic dream vacation experience!"</p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>        
+                <div class="faq">
+                    <h3 class="faq-title">
+                      Dan G.
                     </h3>
-                    <p class="review-text">
-                        "The boat was in excellent shape and our skipper Romano took us to amazing places. He listened to our wishes, provided ideas and always got us the best spots in the bays and marinas. He interacted with all of us in a very pleasant way and we had a lot of fun together with him. As one of the kids celebrated her birthday, he made sure she had a great evening with presents and fun."
-                    </p>
-                </div>
-                <div class="comment">
-                    <h3 class="review-title">
-                  Ben R.
+                    <p class="faq-text">
+                        "The boat was in excellent shape and our skipper Romano took us to amazing places. He listened to our wishes, provided ideas and always got us the best spots in the bays and marinas. He interacted with all of us in a very pleasant way and we had a lot of fun together with him. As one of the kids celebrated her birthday, he made sure she had a great evening with presents and fun."</p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>  
+                <div class="faq">
+                    <h3 class="faq-title">
+                      Ben R.
                     </h3>
-                    <p class="review-text">
+                    <p class="faq-text">
                         "Our captain was Romano, and we could not have been luckier. We’re a young group, and he was the perfect personality for us. He had endless ideas and contacts on islands for activities, bars and restaurants - Romano can put together a perfect week for any group as a result. He also put together perfect itineraries for our trip, and stayed flexible when we decided we wanted to make adjustments."</p>
-                </div>
-                <div class="comment">
-                    <h3 class="review-title">
-                  Yves V.
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>   
+                <div class="faq">
+                    <h3 class="faq-title">
+                      Yves V.
                     </h3>
-                    <p class="review-text">
-                        "Really great experience, starting with the exchanges with Ivana to find the right boat and ending with a great skipper in the name of Romano.
-                        My kids, 11 & 14, loved it - something to do again they said.
+                    <p class="faq-text">
+                        "Really great experience, starting with the exchanges with Ivana to find the right boat and ending with a great skipper in the name of Romano. My kids, 11 & 14, loved it - something to do again they said.
                         With the help of your skipper, and the weather forecast, you choose what you want to see, how long you want to navigate each day, and if you stay overnight in a Marina or at a buoy in a small bay."</p>
-                </div>
-                <div class="comment">
-                    <h3 class="review-title">
-                  Togliatti
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <div class="faq">
+                    <h3 class="faq-title">
+                      Togliatti
                     </h3>
-                    <p class="review-text">
+                    <p class="faq-text">
                         "The experience was an absolute delight from start to finish. Romano and Ema- our skipper and hostess- were a delightful team, always cheerful and ready to answer the most pointlessly esoteric of questions. Romano’s excellent itinerary and tenacity in securing the best deals on our excursions were much appreciated. The team came up with some great recommendations and a fantastic itinerary."</p>
-                </div>
-                <div class="comment">
-                    <h3 class="review-title">
-                  Kristoff P.
+                    </p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                  <div class="faq">
+                    <h3 class="faq-title">
+                      Kristoff P.
                     </h3>
-                    <p class="review-text">
+                    <p class="faq-text">
                         "I can honestly say it was one of the best experiences of our lives. Everything about our week aboard turned out absolutely perfect. And that's saying a lot. Captain Romano assured that every step of the way was totally smooth and hassle free: he knew all the coves, anchorages, bays, marinas on every island serving us with advice at every step that made our vacation truly unforgettable.</p>
-                </div>
-                <div class="comment">
-                    <h3 class="review-title">
-                  Gen Middlemiss
+                    </p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>  
+                 <div class="faq">
+                    <h3 class="faq-title">
+                      Gen Middlemiss
                     </h3>
-                    <p class="review-text">
+                    <p class="faq-text">
                         "A little belated testimonial for the lovely Romano Mihanovic.I've only got awesome things to say & great memories of our week long trip, thanks to him!! Romano was super attentive as to organising group dinners (Iko's Farm being our all time favourite!) and activities, always making sure we had spots on the excursions! He was also really easy to communicate with, funny & a genuine guy! It was one of the best weeks ever - full of laughter, swims, delicious Croatian food/wine and making friends/connections from opposite parts of the world."</p>               
-                 </div>
-                <div class="comment">
-                    <h3 class="review-title">
-                  ajkasper901
+                    </p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
+                <div class="faq">
+                    <h3 class="faq-title">
+                      ajkasper901
                     </h3>
-                    <p class="review-text">
+                    <p class="faq-text">
                         "This trip was by far one of the best experiences ever! We got to see different islands every day, and also had nice swim stops along the way. I made some life long friends on the boat, and created some amazing memories! Romano was the best skipper, and he made sure everyone was safe and having fun. He also made sure that we got a spot on any excursion that we wanted to do, and all of his recommendations were so fun and perfect! I highly recommend this trip, along with Romano as a skipper. He truly made the trip even better!"</p>
-                </div>
+                    </p>
+                    <button class="faq-toggle">
+                      <i class="fas fa-chevron-down"></i>
+                      <i class="fas fa-times"></i>
+                    </button>
+                  </div>
             </div>
         </div>
     </section>
 
-    <footer id="contact-us">
+    <footer id="contact-us" class="anchored-section">
         <h2>Contact us</h2>
         <span><a href="tel:+385914691472"></a></span>
         <p class="subtext"><a class="project-link" href="mailto: info@topcroatiasailing.com">info@topcroatiasailing.com</a></p>
     </footer>
 
+    <script src="js/cats-carousel.js"></script>
     <script src="script.js"></script>
 </body>
 

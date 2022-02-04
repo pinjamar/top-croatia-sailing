@@ -9,15 +9,6 @@ function fixNav() {
   }
 }
 
-// const hamburgerButton = document.getElementById("hamburger");
-// const navList = document.getElementById("nav-list");
-
-// function toggleButton() {
-//   navList.classList.toggle("show");
-// }
-
-// hamburgerButton.addEventListener("click", toggleButton);
-
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
