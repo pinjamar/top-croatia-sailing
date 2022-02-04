@@ -74,12 +74,6 @@ function connectCarouselEvents(catCarousel) {
   });
 }
 
-/**
- * Starts carousel autoplay logic
- *
- * @param {*} catCarousel HTML element containing the cat carousel
- * @returns void
- */
 function startCarouselAutoplay(catCarousel) {
   let shouldAutoplay = true;
   let nextButton = document.querySelector(".cat-carousel--button.button--next");
@@ -117,47 +111,18 @@ function startCarouselAutoplay(catCarousel) {
   });
 }
 
-/**
- * Generates HTML required for cats carousel
- * @param {*} cats - array of cats
- * @returns HTML string for carousel
- */
-function buildCarouselHTML(cats) {
+function buildCarouselHTML(images) {
   let catCarouselHTML = "";
 
-  cats
-    .sort((cat1, cat2) => {
-      if (cat1.age < cat2.age) {
-        return -1;
-      } else if (cat1.age > cat2.age) {
-        return 1;
-      } else {
-        return 0;
-      }
-    })
-    .forEach((cat) => {
-      catCarouselHTML += `
-        <div class="slide-card" id="carousel-id-${cat.name}">
+  images.forEach((image) => {
+    catCarouselHTML += `
+        <div class="slide-card" id="carousel-id-${image.name}">
             <a data-modal
-              ><img class="carousel-item" src="images/${cat.name}.jpg"
-            />
-            <h2>${cat.name.toUpperCase()}</h2>
-  
-            <div class="card-modal" data-modal-content>
-                <h1>${cat.name}</h1>
-                <p>Color: ${cat.color}</p>
-                <P>Age: ${cat.age}</P>
-                <button class="udomi-carusel-button" data-cat-name="${
-                  cat.name
-                }" data-carousel-button-id="carousel-button-id-${
-        cat.name
-      }" data-modal="modal-one">UDOMI</button>
-                <button class="modal-close modal-exit">X</button>              
-            </div>
+              ><img class="carousel-item" src="images/${image.name}.jpg"            
             </a>
           </div>
       `;
-    });
+  });
 
   return catCarouselHTML;
 }

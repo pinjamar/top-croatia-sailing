@@ -1,104 +1,100 @@
 {
   "cats": [
     {
-      "name": "1",
-      "color": "crna",
-      "age": 10
+      "name": "1"
+    },
+
+    {
+      "name": "3"
     },
     {
-      "name": "2",
-      "color": "crno-bijela",
-      "age": 7
+      "name": "4"
     },
     {
-      "name": "3",
-      "color": "siva",
-      "age": 9
+      "name": "5"
     },
     {
-      "name": "4",
-      "color": "narancasta",
-      "age": 12
+      "name": "6"
     },
     {
-      "name": "5",
-      "color": "bijela",
-      "age": 5
+      "name": "7"
     },
     {
-      "name": "6",
-      "color": "smedja",
-      "age": 11
+      "name": "8"
     },
     {
-      "name": "7",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "9"
     },
     {
-      "name": "8",
-      "color": "sivo-bijela",
-      "age": 8
+      "name": "10"
     },
     {
-      "name": "9",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "11"
     },
     {
-      "name": "10",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "12"
     },
     {
-      "name": "11",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "13"
     },
     {
-      "name": "12",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "14"
     },
     {
-      "name": "13",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "15"
     },
     {
-      "name": "14",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "16"
     },
     {
-      "name": "15",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "17"
     },
     {
-      "name": "16",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "18"
     },
     {
-      "name": "17",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "19"
     },
     {
-      "name": "18",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "20"
     },
     {
-      "name": "19",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "21"
+    },
+
+    {
+      "name": "22"
+    },
+
+    {
+      "name": "23"
+    },
+
+    {
+      "name": "24"
+    },
+
+    {
+      "name": "25"
+    },
+
+    {
+      "name": "26"
     },
     {
-      "name": "20",
-      "color": "crno-bijela",
-      "age": 3
+      "name": "27"
+    },
+    {
+      "name": "31"
+    },
+    {
+      "name": "29"
+    },
+    {
+      "name": "30"
+    },
+    {
+      "name": "32"
     }
   ]
 }
