@@ -9,21 +9,6 @@ function fixNav() {
   }
 }
 
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-
 //skippers
 const toggles = document.querySelectorAll(".faq-toggle");
 
@@ -33,46 +18,38 @@ toggles.forEach((toggle) => {
   });
 });
 
-//CAROUSEL
+//comments
 
-const imgs = document.getElementById("imgs");
-const leftBtn = document.getElementById("left");
-const rightBtn = document.getElementById("right");
+const header = document.querySelector("header");
+const sectionOne = document.querySelector(".home-intro");
 
-const img = document.querySelectorAll("#imgs img");
+const faders = document.querySelectorAll(".fade-in");
+const sliders = document.querySelectorAll(".slide-in");
 
-let idx = 0;
+const appearOptions = {
+  threshold: 0,
+  rootMargin: "0px 0px -250px 0px",
+};
 
-let interval = setInterval(run, 2000);
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
 
-function run() {
-  idx++;
-  changeImage();
-}
-
-function changeImage() {
-  if (idx > img.length - 1) {
-    idx = 0;
-  } else if (idx < 0) {
-    idx = img.length - 1;
-  }
-
-  imgs.style.transform = `translateX(${-idx * 500}px)`;
-}
-
-function resetInterval() {
-  clearInterval(interval);
-  interval = setInterval(run, 2000);
-}
-
-rightBtn.addEventListener("click", () => {
-  idx++;
-  changeImage();
-  resetInterval();
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
 });
 
-leftBtn.addEventListener("click", () => {
-  idx--;
-  changeImage();
-  resetInterval();
+sliders.forEach((slider) => {
+  appearOnScroll.observe(slider);
 });

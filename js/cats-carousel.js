@@ -21,9 +21,7 @@ fetch("images.json")
   })
   .then((catCarousel) => {
     startCarouselAutoplay(catCarousel);
-  })
-
-  .then(() => modalPopup());
+  });
 
 /**
  * Hooks up carousel events. Should be called after carousel has finished building HTML.
