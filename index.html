@@ -17,15 +17,15 @@
     <nav class="nav" id="nav">
         <div class="nav-container">
             <h1 class="logo">
-                <a href="/index.html">Logo</a>
-                <!-- <img class="logo-pic" src="images/LOGO-prozirno.png" /> -->
+                <!-- <a href="/index.html">Logo</a> -->
+                <img class="logo-pic" src="images/LOGO-prozirno.png"  style="height: 60px; width:60px"/>
             </h1>
             <ul id="nav-list">
-                <li><a href="#home" class="current">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#image-gallery">Gallery</a></li>
-                <li><a href="#review">Reviews</a></li>
-                <li><a href="#contact-us">Contact</a></li>
+                <li><a href="#home" class="navi current">Home</a></li>
+                <li><a href="#about" class="navi">About</a></li>
+                <li><a href="#image-gallery" class="navi">Gallery</a></li>
+                <li><a href="#review" class="navi">Reviews</a></li>
+                <li><a href="#contact-us" class="navi">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -70,14 +70,41 @@
       </div>
     </section>
 
+    <section class="image-gallery anchored-section" id="image-gallery">
+      <div class="cat-carousel-wrapper">
+        <div id="comment-carousel">
+          <div class="faq">
+            <h3 class="faq-title">
+              Surene
+            </h3>
+            <p class="faq-text">
+                "We were a group of 10, and Romano, oh Romano, he was our age, albeit having been a captain for many years, so he knew how to make our trip epic!! He was a skipper-cum-travel manager who suggested an itinerary for our whole trip and made all the activity & meal arrangements and sailed us to destination..."</p>
+            <button class="faq-toggle">
+              <i class="fas fa-chevron-down"></i>
+              <i class="fas fa-times"></i>
+            </button>
+          </div>  
+        </div>
+        <div class="cat-carousel--button button--next"></div>
+        <div class="cat-carousel--button button--prev"></div>
+      </div>
+    </section>
+
     <section class="reviews anchored-section" id="review">
       <div class="home-more-stuff">
         <div class="more-stuff-grid">
-          <img
+          <!-- <img
             src="images/sailing2.jpg"
             alt=""
             class="slide-in from-left"
-          />
+          /> -->
+          <p class="slide-in from-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+            omnis sapiente neque cumque consequuntur reiciendis deserunt.
+            Dolorem vero exercitationem consequuntur, eligendi cupiditate
+            debitis facilis quibusdam magni. Eveniet.
+          </p>
           <p class="slide-in from-right">
                 "We were a group of 10, and Romano, oh Romano, he was our age, albeit having been a captain for many years, so he knew how to make our trip epic!! He was a skipper-cum-travel manager who suggested an itinerary for our whole trip and made all the activity & meal arrangements and sailed us to destination..."</p>   
         </div>
@@ -89,40 +116,45 @@
             Dolorem vero exercitationem consequuntur, eligendi cupiditate
             debitis facilis quibusdam magni. Eveniet.
           </p>
-          <img
+          <!-- <img
             src="images/sailing2.jpg"
             alt=""
             class="slide-in from-right"
-          />
+          /> -->
+          <p class="slide-in from-right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+            omnis sapiente neque cumque consequuntur reiciendis deserunt.
+            Dolorem vero exercitationem consequuntur, eligendi cupiditate
+            debitis facilis quibusdam magni. Eveniet.
+          </p>
         </div>
         <div class="more-stuff-grid">
-          <img
+          <!-- <img
             src="images/sailing2.jpg"
             alt=""
             class="slide-in from-left"
-          />
+          /> -->
+          <p class="slide-in from-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+            omnis sapiente neque cumque consequuntur reiciendis deserunt.
+            Dolorem vero exercitationem consequuntur, eligendi cupiditate
+            debitis facilis quibusdam magni. Eveniet.
+          </p>
           <p class="slide-in from-right">
             "The weather was perfect, even it’s storms are beautiful. And of course, we ate the freshest fish, had a fantastic Octopus Peka and you just have to try the lavender ice cream! With over 1300 islands in Croatia & having visited 3….I think I may have to come back! thank you (hvala) @sailcharterincroatia & Romano Mihanović for a fantastic dream vacation experience!"
-
           </p>
         </div>
         <div class="more-stuff-grid">
           <p class="slide-in from-left">
             "The boat was in excellent shape and our skipper Romano took us to amazing places. He listened to our wishes, provided ideas and always got us the best spots in the bays and marinas. He interacted with all of us in a very pleasant way and we had a lot of fun together with him. As one of the kids celebrated her birthday, he made sure she had a great evening with presents and fun."
-
           </p>
-          <img
+          <!-- <img
             src="images/sailing2.jpg"
             alt=""
             class="slide-in from-right"
-          />
-        </div>
-        <div class="more-stuff-grid">
-          <img
-            src="images/sailing2.jpg"
-            alt=""
-            class="slide-in from-left"
-          />
+          /> -->
           <p class="slide-in from-right">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
             quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
@@ -132,6 +164,11 @@
           </p>
         </div>
         <div class="more-stuff-grid">
+          <!-- <img
+            src="images/sailing2.jpg"
+            alt=""
+            class="slide-in from-left"
+          /> -->
           <p class="slide-in from-left">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
             quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
@@ -139,11 +176,13 @@
             Dolorem vero exercitationem consequuntur, eligendi cupiditate
             debitis facilis quibusdam magni. Eveniet.
           </p>
-          <img
-            src="images/sailing2.jpg"
-            alt=""
-            class="slide-in from-right"
-          />
+          <p class="slide-in from-right">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis fugit,
+            quae beatae vero sit magni quaerat id ratione. Dolor optio unde amet
+            omnis sapiente neque cumque consequuntur reiciendis deserunt.
+            Dolorem vero exercitationem consequuntur, eligendi cupiditate
+            debitis facilis quibusdam magni. Eveniet.
+          </p>
         </div>
       </div>
       

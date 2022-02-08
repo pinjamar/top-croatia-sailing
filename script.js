@@ -1,15 +1,15 @@
-const nav = document.querySelector(".nav");
-window.addEventListener("scroll", fixNav);
+var navList = document.getElementById("nav-list");
+var navi = navList.getElementsByClassName("navi");
 
-function fixNav() {
-  if (window.scrollY > nav.offsetHeight + 150) {
-    nav.classList.add("active");
-  } else {
-    nav.classList.remove("active");
-  }
+for (var i = 0; i < navi.length; i++) {
+  navi[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("current");
+    current[0].className = current[0].className.replace(" current", " ");
+    this.className += " current";
+  });
 }
 
-//skippers
+//green comments
 const toggles = document.querySelectorAll(".faq-toggle");
 
 toggles.forEach((toggle) => {
