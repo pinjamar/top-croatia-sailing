@@ -20,7 +20,7 @@ body {
   top: 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  z-index: 11;
+  z-index: 15;
 }
 
 .nav .active {
@@ -44,7 +44,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 0;
+  padding: 5px 0;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -52,6 +52,11 @@ body {
 .nav .nav-container .logo {
   margin: 0;
   text-align: center;
+}
+
+.nav .nav-container .logo-pic:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .nav .nav-container ul {
@@ -68,7 +73,7 @@ body {
 }
 
 .nav .nav-container ul .current {
-  color: #c0392b;
+  color: #899798;
 }
 
 .nav .nav-container ul li {
@@ -84,7 +89,7 @@ body {
 }
 
 .nav .nav-container a:hover {
-  color: #c0392b;
+  color: #899798;
 }
 
 /* HOME */
@@ -121,7 +126,7 @@ body {
 
 .hero .title-container {
   margin-bottom: 5vh;
-  margin-right: 20vw;
+  margin-right: 25vw;
 }
 
 .hero h1 {
@@ -412,7 +417,7 @@ body {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  color: red;
+  color: black;
   background: none;
   border: 0;
   font-weight: bold;
@@ -506,7 +511,8 @@ body {
 }
 
 .more-stuff-grid .faq .faq-title {
-  text-align: center;
+  text-align: right;
+  font-weight: normal;
 }
 
 .more-stuff-grid .faq .faq-text {
@@ -519,7 +525,7 @@ footer {
   background-color: #001747;
   color: #e5e1e6;
   text-align: center;
-  padding: 80px;
+  padding: 40px;
   margin: 0;
 }
 
@@ -533,8 +539,12 @@ footer a {
   font-weight: bold;
 }
 
-footer .subtext {
-  margin-top: 20px;
+footer .fab {
+  margin: 20px 0;
+}
+
+footer .fa-whatsapp:before {
+  color: lightgreen;
 }
 
 @media only screen and (max-width: 1200px) {
