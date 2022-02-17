@@ -377,6 +377,7 @@ body {
   opacity: 1;
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+  z-index: 2;
 }
 
 .modal.open h1 {
@@ -432,7 +433,7 @@ body {
 
 .more-stuff-grid {
   background: #f4f4f4;
-  padding: 2em 0;
+  padding: 1.5em 0;
   display: -ms-grid;
   display: grid;
   grid-gap: 2em;
@@ -477,37 +478,17 @@ body {
 }
 
 .more-stuff-grid .faq {
-  background-color: #a3e4db;
+  background-color: #d2e2e4;
   border: 1px solid #9fa4a8;
   -webkit-box-shadow: 0 2px 10px rgba(53, 105, 90, 0.233);
           box-shadow: 0 2px 10px rgba(53, 105, 90, 0.233);
   border-radius: 10px;
   margin: 0px;
-  padding: 30px;
+  padding: 25px;
   position: relative;
   overflow: hidden;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
-}
-
-.more-stuff-grid .faq:before, .more-stuff-grid .faq:after {
-  content: "\f075";
-  font-family: "Font Awesome 5 Free";
-  color: #2ecc71;
-  font-size: 7rem;
-  position: absolute;
-  opacity: 0.2;
-  top: 20px;
-  left: 20px;
-  z-index: 0;
-}
-
-.more-stuff-grid .faq:before {
-  color: #3498db;
-  top: -10px;
-  left: -30px;
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
 }
 
 .more-stuff-grid .faq .faq-title {
@@ -516,7 +497,6 @@ body {
 }
 
 .more-stuff-grid .faq .faq-text {
-  margin: 30px 0 0;
   font-style: italic;
   font-weight: 500;
 }
@@ -550,6 +530,7 @@ footer .fa-whatsapp:before {
 @media only screen and (max-width: 1200px) {
   .nav .nav-container {
     margin: 0px 20px;
+    padding: 15px 0;
   }
   .hero .title-container {
     margin-right: 0;

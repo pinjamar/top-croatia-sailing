@@ -78,6 +78,7 @@ function startCarouselAutoplay(summerCarousel) {
   let shouldAutoplay = true;
   let nextButton = document.querySelector(".cat-carousel--button.button--next");
   let prevButton = document.querySelector(".cat-carousel--button.button--prev");
+  let modal = document.querySelector(".modal");
 
   if (!nextButton) {
     console.error("Unable to start autoplay, check if nextButton is present");
@@ -107,6 +108,13 @@ function startCarouselAutoplay(summerCarousel) {
     shouldAutoplay = true;
   });
   prevButton.addEventListener("mouseleave", () => {
+    shouldAutoplay = true;
+  });
+
+  modal.addEventListener("mouseover", () => {
+    shouldAutoplay = false;
+  });
+  modal.addEventListener("mouseleave", () => {
     shouldAutoplay = true;
   });
 }
