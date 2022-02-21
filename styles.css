@@ -12,6 +12,11 @@ body {
   background: #f4f4f4;
 }
 
+body.modal-body {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 /* NAVBAR */
 .nav {
   position: -webkit-sticky;
@@ -78,6 +83,11 @@ body {
 
 .nav .nav-container ul li {
   font-size: 20px;
+}
+
+.nav .nav-container ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .nav .nav-container a {
@@ -154,7 +164,7 @@ body {
 }
 
 .about h2 {
-  margin-top: 20px;
+  margin: 15px;
 }
 
 .about h3 {
@@ -165,10 +175,10 @@ body {
 .about p {
   color: #555;
   line-height: 30px;
-  letter-spacing: 1.2px;
+  letter-spacing: 0.9px;
   margin: 5px;
   padding: 10px;
-  text-align: center;
+  text-align: justify;
 }
 
 .about .skippers {
@@ -384,6 +394,11 @@ body {
   margin: auto;
 }
 
+.body .modal.open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 .modal-bg {
   position: absolute;
   background: grey;
@@ -400,7 +415,6 @@ body {
   -webkit-box-shadow: #001747;
           box-shadow: #001747;
   height: 70vh;
-  width: 60vw;
 }
 
 .modal-container img {
@@ -523,8 +537,16 @@ footer .fab {
   margin: 20px 0;
 }
 
-footer .fa-whatsapp:before {
+footer .fa-whatsapp:before,
+footer .fa-phone:before {
   color: lightgreen;
+}
+
+footer .phone:hover,
+footer .what:hover,
+footer .subtext:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -584,6 +606,8 @@ footer .fa-whatsapp:before {
   }
   .more-stuff-grid .faq {
     margin: 20px;
+    font-size: 14px;
+    padding: 10px;
   }
   .more-stuff-grid .hide-comment {
     display: none;
