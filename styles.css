@@ -176,7 +176,7 @@ body.modal-body {
   color: #555;
   line-height: 30px;
   letter-spacing: 0.85px;
-  margin: 5px;
+  margin: 5px 15px;
   padding: 10px;
   text-align: justify;
 }
@@ -533,6 +533,11 @@ footer a {
   font-weight: bold;
 }
 
+footer a:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
 footer .fab {
   margin: 20px 0;
 }
@@ -540,6 +545,19 @@ footer .fab {
 footer .fa-whatsapp:before,
 footer .fa-phone:before {
   color: lightgreen;
+}
+
+footer .phone {
+  font-size: 15px;
+}
+
+footer .phone,
+footer .what,
+footer .subtext {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
 }
 
 footer .phone:hover,

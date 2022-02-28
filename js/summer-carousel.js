@@ -130,7 +130,7 @@ function buildCarouselHTML(images) {
               />
          <div class="card-modal" data-modal-content>
               <img class="carousel-item" src="images/${image.name}.jpg"
-              />                
+              />             
               <button class="modal-close modal-exit">X</button>                              
           </div>         
             </a>
@@ -171,5 +171,11 @@ function modalPopup() {
         });
       });
     });
+  });
+  window.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      modal.classList.remove("open");
+      document.body.classList.remove("modal-body");
+    }
   });
 }

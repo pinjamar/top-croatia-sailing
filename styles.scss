@@ -150,7 +150,7 @@ body.modal-body {
     color: #555;
     line-height: 30px;
     letter-spacing: 0.85px;
-    margin: 5px;
+    margin: 5px 15px;
     padding: 10px;
     text-align: justify;
   }
@@ -442,6 +442,9 @@ footer {
     margin-top: 0px;
     color: #e5e1e6;
     font-weight: bold;
+    &:hover {
+      transform: scale(1.2);
+    }
   }
   .fab {
     margin: 20px 0;
@@ -450,9 +453,15 @@ footer {
   .fa-phone:before {
     color: lightgreen;
   }
+  .phone {
+    font-size: 15px;
+  }
+
   .phone,
   .what,
   .subtext {
+    width: fit-content;
+    margin: auto;
     &:hover {
       transform: scale(1.2);
     }
