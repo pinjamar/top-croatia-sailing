@@ -9,15 +9,6 @@ for (var i = 0; i < navi.length; i++) {
   });
 }
 
-//green comments
-const toggles = document.querySelectorAll(".faq-toggle");
-
-toggles.forEach((toggle) => {
-  toggle.addEventListener("click", () => {
-    toggle.parentNode.classList.toggle("active");
-  });
-});
-
 //comments
 
 const header = document.querySelector("header");

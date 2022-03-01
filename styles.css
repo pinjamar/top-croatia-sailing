@@ -611,6 +611,7 @@ footer .subtext:hover {
   }
   .image-gallery .cat-carousel-wrapper #kitten-carousel .slide-card {
     min-width: 90%;
+    pointer-events: none;
   }
   .modal {
     display: none;

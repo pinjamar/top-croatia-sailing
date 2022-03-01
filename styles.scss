@@ -527,6 +527,7 @@ footer {
       #kitten-carousel {
         .slide-card {
           min-width: 90%;
+          pointer-events: none;
         }
       }
     }

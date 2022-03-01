@@ -128,7 +128,7 @@ function buildCarouselHTML(images) {
             <a data-modal
               ><img class="carousel-item" src="images/${image.name}.jpg"
               />
-         <div class="card-modal" data-modal-content>
+                 <div class="card-modal" data-modal-content>
               <img class="carousel-item" src="images/${image.name}.jpg"
               />             
               <button class="modal-close modal-exit">X</button>                              
@@ -170,12 +170,12 @@ function modalPopup() {
           document.body.classList.remove("modal-body");
         });
       });
+      window.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          modal.classList.remove("open");
+          document.body.classList.remove("modal-body");
+        }
+      });
     });
-  });
-  window.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      modal.classList.remove("open");
-      document.body.classList.remove("modal-body");
-    }
   });
 }
