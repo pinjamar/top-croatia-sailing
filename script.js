@@ -1,5 +1,6 @@
 var navList = document.getElementById("nav-list");
 var navi = navList.getElementsByClassName("navi");
+const navBar = document.getElementById("nav");
 
 for (var i = 0; i < navi.length; i++) {
   navi[i].addEventListener("click", function () {
@@ -8,6 +9,31 @@ for (var i = 0; i < navi.length; i++) {
     this.className += " current";
   });
 }
+
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll("#nav-list .navi");
+const footer = document.getElementById("contact-us");
+window.onscroll = () => {
+  var current = "home";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (window.scrollY >= Math.max(sectionTop - 112, 0)) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  if (window.scrollY >= footer.offsetTop - sections[0].offsetHeight) {
+    current = "contact-us";
+  }
+
+  navLi.forEach((li) => {
+    li.classList.remove("current");
+    if (li.dataset.link === current) {
+      li.classList.add("current");
+    }
+  });
+};
 
 //comments
 
