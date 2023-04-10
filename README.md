@@ -1,4 +1,4 @@
-# TOP CROATIA SAILING is a simle static website for local skipper company
+## TOP CROATIA SAILING is a simle static website for local skipper company
 
 - This is built with a HTML, SCSS and Javascript
 
